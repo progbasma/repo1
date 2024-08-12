@@ -1,0 +1,208 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.clear{
+    content: "";
+    clear: both;
+}
+
+@font-face {
+    font-family: 'Segoe' ;
+    src: url(../fonts/segoeuithis.ttf);
+}
+/* start nav*/
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 20;
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+nav a:hover{
+    background-color: silver;
+
+}
+
+nav a{
+    float: right;
+}
+nav a:first-child{
+    float: left;
+}
+
+
+/* end nav*/
+/*start header*/
+header{
+    position: relative;
+}
+header p{
+    font-family:'Segoe' ;
+    position: absolute;
+    top:45%;
+    left: 40%;
+    font-size: 40px;
+
+    color: white;
+   
+}
+header p span{
+    background-color: rgba(0,0,0,0.5);
+
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+
+/*end header*/
+/*start main*/
+main {
+
+}
+main h2{
+    padding: 30px 0px;
+    margin: 0px 30px;
+    border-bottom: 1px solid lightgray;
+
+}
+main article{
+    width: 25%;
+   
+    float: left;
+    position: relative;
+
+}
+main .s1 article div{
+    padding: 20px;
+}
+main .s1 article p{
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 10px 20px;
+    left: 20px;
+    top: 20px;
+}
+main .s2 .pp{
+    padding: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Verdana;
+}
+main .s2 article{
+    padding: 20px;
+
+}
+main .s2 article h3{
+    padding: 20px 0px;
+    font-family: 'Segoe UI';
+}
+main .s2 article p{
+    padding: 20px 0px;
+   
+}
+main .s2 article span{
+    padding: 20px 0px;
+    color: silver;
+    
+}
+main .s2 article button{
+    display:  block;
+    width: 100%;
+    background-color: silver;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+}
+
+
+/*start contact*/
+#contactform
+{
+    padding: 20px;
+}
+#contactform form{
+
+}
+#contactform form h2{
+    
+}
+#contactform form p{
+
+    padding: 20px 0px;
+}
+#contactform form input{
+    display: block;
+    padding: 10px;
+    margin-bottom:10px ;
+
+    width: 100%;
+
+}
+#contactform form button{
+padding: 10px;
+margin-bottom: 10px;
+background-color: black;
+color: white;
+
+}
+#map{
+    padding: 0px 20px;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px ;
+    text-align: center;
+}
+@media screen and (max-width:900px) {
+
+    nav .righta{
+        display: none;
+    }
+    main .s1 article{
+        width: 50%;
+       
+        
+      
+    
+    }
+    main .s2 article{
+        width: 50%;
+       
+        float: none;
+      
+    
+    }
+
+}
+@media screen and (max-width:500px) {
+   
+    main .s1 article{
+        width: 100%;
+       
+        float: none;
+      
+    
+    }
+    main .s2 article{
+        width: 100%;
+       
+        float: none;
+      
+    
+    }
+
+}
